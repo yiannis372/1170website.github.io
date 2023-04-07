@@ -1,65 +1,62 @@
 @media (min-width: 400px) and (max-width: 999px){
-
+    #close-button{
+        position: absolute;
+        left: 17.5vw;
+    }
     h1, h2{
+        display: flex;
+        justify-content:center;
         font-size: 64px;
     }
 
-    #nav1{
-        font-size: 28px;
-        position: absolute;
-        left: 28vw;
-        width: 20vw;
-        top: 26vh;
-    }
-    
-    h1,  p:not(.sidebar p), #bulletin, .Gallery{
+    p:not(.sidebar p), audio, video{
         display: flex;
-        justify-content: center;
+        justify-content:center;
     }
 
+    #nav1, #nav2{
+        justify-content:center;
+        flex-direction:row;
+    }
+    #nav1{
+        font-size: 28px;
+    }
+    
+    #nav2{
+        font-size: 28px;
+    }
     .widget a{
         font-size: 36px;
     }
     #palette1 {
         position: absolute;
         left: 0.5vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
     #palette2 {
         position: absolute;
         left: 6vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
     #palette3 {
         position: absolute;
         left: 11.5vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
-
-    #bulletin{
-        height: 8vh;
-        width: 50vw;
-    }
-    .Gallery{
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 250px 250px;
+    p:not(.sidebar p){
+        font-size:28px;
     }
     .sidebar p{
         font-size:24px;
         width:17vw;
         height:60vh;
     }
-    table{
-        position:absolute;
-        top:27vh;
-        left:27vw;
-    }   
     #course-button{
         position:absolute;
         top:40vh;
@@ -68,6 +65,11 @@
     #course-text{
         position:absolute;
         top:40vh;
+        left:22vh;
+    }
+    #course-response{
+        position:absolute;
+        top:42vh;
         left:22vh;
     }
     .widget{
@@ -80,34 +82,31 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1399px){
-    h1{
+    #close-button{
         position: absolute;
-        top: 3vh;
-        left: 39vw;
-    }
-    h2{
-        position: absolute;
-        top: 12vh;
-        left: 34.5vw;
+        left: 17.5vw;
     }
     h1, h2{
+        display: flex;
+        justify-content:center;
         font-size: 64px;
     }
 
+    p:not(.sidebar p), audio, video{
+        display: flex;
+        justify-content:center;
+    }
+
+    #nav1, #nav2{
+        justify-content:center;
+        flex-direction:row;
+    }
     #nav1{
         font-size: 28px;
-        position: absolute;
-        left: 28vw;
-        width: 20vw;
-        top: 26vh;
     }
     
     #nav2{
         font-size: 28px;
-        position: absolute;
-        left: 52vw;
-        width: 20vw;
-        top: 26vh;
     }
     .widget a{
         font-size: 36px;
@@ -115,45 +114,40 @@
     #palette1 {
         position: absolute;
         left: 0.5vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
     #palette2 {
         position: absolute;
         left: 6vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
     #palette3 {
         position: absolute;
         left: 11.5vw;
-        top: 12vh;
+        top: 18vh;
         height: 2.5vh;
         width: 4.5vw;
     }
     p:not(.sidebar p){
-        position:absolute;
-        top: 20vh;
-        left: 26vw;
-        font-size:18px;
-        width: 50vw;
+        font-size:28px;
     }
 
     #bulletin{
         position:absolute;
-        height:10vh;
         top:32vh;
         height: 8vh;
         width: 50vw;
     }
     .Gallery{
         position:absolute;
-        top: 37vh;
-        left: 21.5vw;
-        grid-template-columns: 250px 250px 250px;
-        grid-template-rows: 250px 180px;
+        top: 40vh;
+        left: 24vw;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px 250px;
     }
     .sidebar p{
         font-size:24px;
@@ -193,9 +187,8 @@
     }
     .widget{
         width: 40vw;
-        height: 20vh;
-        top: 90vh;
         position: absolute;
         left: 59vw;
+        top:105vw;
     }
 }

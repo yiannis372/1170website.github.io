@@ -11,33 +11,38 @@
     <br>
 
     <header>
-        <h1 id="section1" title="section">About Me!</h1></br>
+        <h1 id="section1" title="About Me Section">About Me!</h1></br>
         <br>
         <br>
     </header>
     <body>
-        <div class="aboutmep" aria-label="stuff">
-            <p id="text1">My name is Yiannis, I am 18 years old, and I am at Dalhousie for my Bachelor in Applied Computer Science. I chose this program because it is the only thing that I've been looking to pursue in university since the beginning of high school. I have always been familiar with computers and knew that this was the proper path for me</p>
+        <div class="aboutmep" aria-label="About Me Paragraph">
+            <p id="text1"><b>My name is Yiannis, I am 18 years old, and I am at Dalhousie for my Bachelor in Applied Computer Science. I chose this program because it is the only thing that I've been looking to pursue in university since the beginning of high school. I have always been familiar with computers and knew that this was the proper path for me</b></p>
+            <br>
+            <br>
             <p aria-label="bulletin board" id="bulletin">My Gallery:</p>
         </div>
-        <div class="Gallery">
-            <img width="200px" height="200px" src="C:\Users\avery\Pictures\asd12w.png">
-            <img width="200px" height="200px" src="C:\Users\avery\Pictures\asd12w.png">
-            <img width="200px" height="200px" src="C:\Users\avery\Pictures\asd12w.png">
+        <div aria-label="Photo Gallery" class="Gallery">
+            <img alt="nature" width="200px" height="200px" src="\TheWebsite\assets\nature.jpg">
+            <img alt="water" width="200px" height="200px" src="\TheWebsite\assets\water.jpg">
+            <img alt="mountain" width="200px" height="200px" src="\TheWebsite\assets\mountain.jpg">
 
         </div>
-        <div id="widget" class="widget" aria-label="contact">
-                <footer><a id="contactinfo" href="contact.html">Contact Info: yn832830@dal.ca <br><br>Copyright: Yiannis Giannopoulos, 2023</a></footer></a>
-            </div>
-            <div aria-label ="sidebar" id="sidebar" class="sidebar">
-                <p id="sidebarp">Color Palettes:</p>
-                <br>
-                <input aria-label="palette1" type="button" id="palette1" value="1"></input>
-                <br>
-                <input aria-label="palette2" type="button" id="palette2" value="2"></input>
-                <br>
-                <input aria-label="palette3" type="button" id="palette3" value="3"></input>
+        <div id="widget" class="widget" aria-label="Contact Information">
+            <footer><a id="contactinfo" href="contact.html"><b>Contact Info: yn832830@dal.ca <br><br>Copyright: Yiannis Giannopoulos, 2023</b></a></footer></a>
         </div>
+        <input aria-label="Sidebar Opener" type="button" id="close-button" value="X"></input>
+        <input aria-label="Sidebar Closer" type="button" id="open-button" value=">"></input>
+        <div aria-label ="sidebar" id="sidebar" class="sidebar">
+            <p id="sidebarp">Color Palettes:</p>
+            <br>
+            <input aria-label="palette1" type="button" id="palette1" value="1"></input>
+            <br>
+            <input aria-label="palette2" type="button" id="palette2" value="2"></input>
+            <br>
+            <input aria-label="palette3" type="button" id="palette3" value="3"></input>
+        </div>
+        <script src="aboutmeFunctions.js"></script>
         <script src="aboutmeChanger.js"></script>
     </center>
     </body>

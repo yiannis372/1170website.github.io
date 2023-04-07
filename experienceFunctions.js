@@ -1,7 +1,3 @@
-
-
-
-
 function close() {
     let result = document.getElementById("sidebar");
     let clicker = document.getElementById("close-button");
@@ -51,10 +47,12 @@ function read() {
 }
 
 
-
+const closeButton = document.getElementById("close-button");
+const openButton = document.getElementById("open-button");
 const courseSubmit = document.getElementById("course-button");
 
 courseSubmit.addEventListener("click", read);
-
+closeButton.addEventListener("click", close);
+openButton.addEventListener("click", open);
 
 

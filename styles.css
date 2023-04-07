@@ -1,12 +1,21 @@
-img:not(.gridimages img)
-{
+img{
     border-style: solid;
     border-width: 4px;
-    border-color:palevioletred;
+    border-color:rgb(0, 225, 255);  
     padding: 2px;
     margin: 2px;
 }
 
+body{
+    background-color: rgb(36,46,50);
+}
+h2{
+    color: rgb(255,255,255);
+}
+
+p{
+    color: rgb(255,255,255);
+}
 .aboutmep p{
     width:40%; 
     border-style:solid;
@@ -31,6 +40,7 @@ img:not(.gridimages img)
     left: 0.01%; 
     top:5%;
     background-color: rgb(233, 131, 131);
+    color: black;
 }
 
 #bulletin {
@@ -65,16 +75,8 @@ img:not(.gridimages img)
 }
 
 
-[title~="section"]{
+[title~="Section"]{
     color: rgb(255, 0, 230);
-}
-[title~="stressed"]{
-    border-color: rgb(255, 0, 230);
-    border-radius:5px;
-}
-
-.fileinfo{
-    position:absolute; top:65%; left:0.015%; border-style:solid; border-color: green; width:13%;
 }
 
 h1, h2{
@@ -88,37 +90,23 @@ h ~ h{
 }
 
 a{
-    color:rgb(0, 225, 255);
+    color: black;
 }
 
 .widget{
     width: 300px; 
     border-style:solid;
-    border-color: blueviolet; 
+    border-color: rgb(0, 225, 255);  
+    background-color: palevioletred;
     position:absolute; 
     left: 82%; 
     top: 90%; 
     margin: auto;
 }
 
-ul:not(.fileinfo ul), ol:not(.fileinfo ol){
-    border-style: solid;
-    border-width: 2px;
-    border-color: hotpink;
-}
 
-.information{
-    width:500px; 
-}
 
-.information ol{
-    width:50%;
-    font-weight: bold;
-}
 
-.information img{
-    width:100%;
-}
 
 *{
     font-family: arial;
@@ -135,12 +123,10 @@ td, tr{
     border-style: solid;
     border-width: 2px;
     border-color:black;
+    color: white;
 }
 
 
-li{
-    font-weight:bold;
-}
 
 .contactinfo form{
     width: 15%;
@@ -163,22 +149,6 @@ li{
     margin:auto;
     align-items: center;
     justify-content: center;
-}
-
-.gridimages img{
-    width:200px;
-    height:200px;
-}
-
-.gridimages {
-    display: flex;
-    gap:20px;
-    column-gap: 100px;
-}
-
-
-.careers p{
-    text-align:center;
 }
 
 .navigation > a{
@@ -224,4 +194,4 @@ div + table{
 }
 table, th, td {
     border:1px solid black;
-  }
+}
